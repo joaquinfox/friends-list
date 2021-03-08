@@ -1,0 +1,10 @@
+<h1>Landing</h1>
+
+<form action="/addfriend" method="POST">
+  <input type="text" name="newfriend" placeholder="Name..." />
+  <button>I have a new friend</button>
+</form>
+
+<% if(friends){ %> <% friends.forEach((friend)=>{ %>
+<li><%= friend %></li>
+<% }) %> <% } %>
